@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/form.css">
+    <title>Blogpost Home</title>
 </head>
 
 <body>
     <header>
         <h1>Dog With A Blog</h1>
         <nav class="navbar">
+            <button class="blogs-web-button" onclick="navigateToBlogsPage()">Blogs</button>
             <button class="dark-theme-toggle" onclick="toggleDarkTheme(this)">
                 <ion-icon name="moon"></ion-icon>
                 <span class="dark-theme-text">Dark Theme</span>
@@ -20,7 +21,7 @@
     </header>
     <main>
         <section class="post-blog">
-            <h1>Blog Form</h1> <br><br>
+            <h1 class="form-title">Post A Blog</h1><br><br>
             <form>
                 <label for="title"><h3>Title:</h3></label>
                 <input type="text" id="title" name="title" required><br>

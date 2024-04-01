@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --default-greywhite: #e5e5e9;
+    --white: white;
+    --grey-theme: #1f1f23;
+    --black: black;
+    --text-black: black;
+    --text-white: white;
+    --dark-theme-text: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--default-greywhite);
+    &.dark {
+        background-color: var(--grey-theme);
+        color: var(--text-white);
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--white);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    &.dark {
+        background-color: var(--black);
+        color: var(--text-white);
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    }
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: var(--text-default);
+}
+
+.dark-theme-toggle ion-icon,
+.dark-theme-text {
+    padding: 6px;
+}
+
+.dark-theme-toggle,
+.back-button {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--black);
+    color: var(--text-default);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    &.enabled {
+        color: var(--white);
+        background-color: var(--black);
+        border: 1px solid var(--white);
+    }
+}
+
+.back-button {
+    position: fixed;
+    right: 140px;
+    border: 1px solid var(--black);
+    margin-right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    transition: 0.2s;
+    &.enabled {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+}
+.back-button:hover {
+    scale: 1.01;
+    padding: 1.1rem 3.1rem;
+}
+
+.dark-theme-toggle:hover,
+.back-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    &.enabled {
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    color: var(--text-default);
+    background-color: var(--white); 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
+    &.dark {
+        background-color: var(--black);
+        color: var(--text-white);
+        box-shadow: 0 -2px 4px rgba(255, 255, 255, 0.1);
+    }
+}
