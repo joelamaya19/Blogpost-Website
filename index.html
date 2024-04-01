@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Dog With A Blog</h1>
+        <nav class="navbar">
+            <button class="dark-theme-toggle" onclick="toggleDarkTheme(this)">
+                <ion-icon name="moon"></ion-icon>
+                <span class="dark-theme-text">Dark Theme</span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="post-blog">
+            <h1>Blog Form</h1> <br><br>
+            <form>
+                <label for="title"><h3>Title:</h3></label>
+                <input type="text" id="title" name="title" required><br>
+                
+                <label for="author"><h3>Author:</h3></label>
+                <input type="text" id="author" name="author" required><br><br>
+        
+                <label for="content"><h4>Content:</h4></label>
+                <textarea id="content" name="content" rows="6" required></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        Footer
+    </footer>
+
 </body>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="assets/js/form.js"></script>
 </html>
