@@ -42,23 +42,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Display each blog post in your container
     const container = document.getElementById('blogContainer');
     blogPosts.forEach(blogPost => {
+        const blogContainer = document.createElement('div');
+        blogContainer.classList.add('blog-container');
         // Create elements to display the blog post data
         const titleElement = document.createElement('h3');
         titleElement.textContent = blogPost.title;
+        titleElement.classList.add('blog-title');
 
         const authorElement = document.createElement('p');
         authorElement.textContent = 'By: ' + blogPost.author;
+        authorElement.classList.add('blog-author');
 
         const contentElement = document.createElement('p');
         contentElement.textContent = blogPost.content;
+        contentElement.classList.add('blog-content');
 
-        // Append the elements to the container
-        container.appendChild(titleElement);
-        container.appendChild(authorElement);
-        container.appendChild(contentElement);
-
-        // Add a horizontal line to separate blog posts
-        const hrElement = document.createElement('hr');
-        container.appendChild(hrElement);
+         // Append elements to the blog container
+         blogContainer.appendChild(titleElement);
+         blogContainer.appendChild(contentElement);
+         blogContainer.appendChild(authorElement);
+ 
+         // Append the blog container to the main container
+         container.appendChild(blogContainer);
     });
 });
