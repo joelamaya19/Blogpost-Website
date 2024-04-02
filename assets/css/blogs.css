@@ -1,7 +1,10 @@
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
 }
+
+/* Global Variables */
 :root {
     --default-greywhite: #e5e5e9;
     --white: white;
@@ -12,16 +15,19 @@
     --dark-theme-text: white;
 }
 
+/* Body Styles */
 body {
     display: flex;
     flex-direction: column;
     background-color: var(--default-greywhite);
+    /* Dark Theme */
     &.dark {
         background-color: var(--grey-theme);
         color: var(--text-white);
     }
 }
 
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -32,12 +38,15 @@ header {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+     /* Dark Theme */
     &.dark {
         background-color: var(--black);
         color: var(--text-white);
         box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
     }
 }
+
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -62,6 +71,7 @@ header {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.5s ease;
+     /* Dark Theme */
     &.enabled {
         color: var(--white);
         background-color: var(--black);
@@ -69,6 +79,7 @@ header {
     }
 }
 
+/* Back Button Styles */
 .back-button {
     position: relative;
     border: 1px solid var(--black);
@@ -79,10 +90,13 @@ header {
     font-size: 1rem;
     padding: 1rem 3rem;
     transition: 0.2s;
+     /* Dark Theme */
     &.enabled {
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     }
 }
+
+/* Hover Styles for Back Button and Dark Theme Toggle */
 .back-button:hover {
     scale: 1.01;
     padding: 1.1rem 3.1rem;
@@ -93,12 +107,14 @@ header {
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
+     /* Dark Theme */
     &.enabled {
         background-color: rgba(255, 255, 255, 0.1);
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     }
 }
 
+/* Main Styles */
 main {
     flex: 1;
 }
@@ -160,6 +176,7 @@ footer {
     color: black;
     font-size: 16px;
     margin-bottom: 4px;
+     /* Dark Theme */
     &.dark {
         color: #ccc;
     }

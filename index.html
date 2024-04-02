@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Meta tags, linked stylesheets, and document title are defined in this section -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,10 @@
 </head>
 
 <body>
+     <!-- Header section -->
     <header>
         <h1>Dog With A Blog</h1>
+        <!-- Navigation bar -->
         <nav class="navbar">
             <button class="blogs-web-button" onclick="navigateToBlogsPage()">Blogs</button>
             <button class="dark-theme-toggle" onclick="toggleDarkTheme()">
@@ -19,9 +21,11 @@
             </button>
         </nav>
     </header>
+    <!-- Main content section -->
     <main>
         <section class="post-blog">
             <h1 class="form-title">Post A Blog</h1><br><br>
+            <!-- Blog post form -->
             <form id="blogForm">
                 <label for="title"><h3>Title:</h3></label>
                 <input type="text" id="title" name="title" required><br>
@@ -36,20 +40,23 @@
             </form>
         </section>
     </main>
+    <!-- Footer section -->
     <footer>
+        <!-- Link to my GitHub -->
         <a href="https://github.com/joelamaya19" class="footer-link">
             <ion-icon name="logo-github" class="footer-icon"></ion-icon>
             <span>Creator: Joel Amaya's GitHub</span>
         </a>
-        
+        <!-- Link to my portfolio -->
         <a href="https://joelamaya19.github.io/Joel-Amaya-Portfolio/" class="footer-link">
             <ion-icon name="briefcase-outline" class="footer-icon"></ion-icon>
             <span>Joel Amaya's Portfolio</span>
         </a>
     </footer>
-
+    <!-- Script to load Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Script for form functionality -->
     <script src="assets/js/form.js"></script>
 </body>
 </html>
