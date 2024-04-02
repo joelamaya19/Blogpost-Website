@@ -70,8 +70,7 @@ header {
 }
 
 .back-button {
-    position: fixed;
-    right: 140px;
+    position: relative;
     border: 1px solid var(--black);
     margin-right: 20px;
     text-decoration: none;
@@ -139,7 +138,7 @@ main {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     padding: 20px;
