@@ -41,9 +41,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Display each blog post in your container
     const container = document.getElementById('blogContainer');
+    container.innerHTML = '';
+
     blogPosts.forEach(blogPost => {
         const blogContainer = document.createElement('div');
-        blogContainer.classList.add('blog-container');
+        blogContainer.classList.add('inside-blog-container');
         // Create elements to display the blog post data
         const titleElement = document.createElement('h3');
         titleElement.textContent = blogPost.title;

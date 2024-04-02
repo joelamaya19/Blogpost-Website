@@ -106,12 +106,15 @@ main {
 }
 
 /* CSS for blog container */
-.blog-container {
-    margin: 40px;
+.inside-blog-container {
+    margin: 20px;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
 }
 
 /* CSS for blog title */
@@ -126,13 +129,16 @@ main {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
+    max-width: calc(100% - 40px);
+    overflow-wrap: break-word;
 }
 
 /* CSS for blog author */
 .blog-author {
     font-style: italic;
     font-size: 14px;
-    margin-top: auto; /* Push author to the bottom */
+    width: calc(100% - 40px);
+    margin-top: auto;
 }
 
 footer {
