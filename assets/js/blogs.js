@@ -23,9 +23,6 @@ if (isDarkThemeEnabled) {
 }
 
 
-function navigateToBlogsPage() {
-    window.location.href = 'blogs.html';
-}
 function navigateBackToHome() {
     window.location.href = 'index.html';
 }
