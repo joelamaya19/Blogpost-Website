@@ -152,3 +152,24 @@ footer {
         box-shadow: 0 -2px 4px rgba(255, 255, 255, 0.1);
     }
 }
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 4px;
+    &.dark {
+        color: #ccc;
+    }
+}
+
+.footer-link:hover {
+    color: #007bff;
+}
+
+.footer-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}

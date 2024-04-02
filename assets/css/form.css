@@ -115,7 +115,7 @@ main {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    margin: 16px;
     color: var(--text-default);
     background-color: var(--white);
     &.dark {
@@ -175,7 +175,7 @@ input[type="submit"]:hover {
 }
 
 footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     padding: 20px;
@@ -188,4 +188,25 @@ footer {
         color: var(--text-white);
         box-shadow: 0 -2px 4px rgba(255, 255, 255, 0.1);
     }
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 4px;
+    &.dark {
+        color: #ccc;
+    }
+}
+
+.footer-link:hover {
+    color: #007bff;
+}
+
+.footer-icon {
+    margin-right: 10px;
+    font-size: 24px;
 }

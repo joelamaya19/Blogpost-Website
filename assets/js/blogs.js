@@ -1,9 +1,7 @@
 
 function toggleDarkTheme() {
     // Toggle 'dark' and 'enabled' classes on all relevant elements
-    const elementsToToggle = document.querySelectorAll(
-        '.post-blog, input[type="text"], textarea, header, footer, body, .back-button, .dark-theme-toggle'
-        );
+    const elementsToToggle = document.querySelectorAll('.post-blog, input[type="text"], textarea, header, footer, body, .back-button, .dark-theme-toggle, .footer-link');
     
     elementsToToggle.forEach(element => {
         element.classList.toggle('dark');
