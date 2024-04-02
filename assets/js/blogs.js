@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Display each blog post in your container
-    const container = document.getElementById('blogContainer');
-    
+    const container = document.getElementById('blogContainers');
+
     blogPosts.forEach(blogPost => {
         const blogContainer = document.createElement('div');
         blogContainer.classList.add('inside-blog-container');
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         titleElement.classList.add('blog-title');
 
         const authorElement = document.createElement('p');
-        authorElement.textContent = 'By: ' + blogPost.author;
+        authorElement.textContent = 'Author: ' + blogPost.author;
         authorElement.classList.add('blog-author');
 
         const contentElement = document.createElement('p');

@@ -15,7 +15,6 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: var(--default-greywhite);
     &.dark {
         background-color: var(--grey-theme);
@@ -105,16 +104,14 @@ main {
     flex: 1;
 }
 
-/* CSS for blog container */
+
+/* CSS for inside blog container */
 .inside-blog-container {
-    margin: 20px;
+    width: 90%;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: calc(100% - 40px);
-    display: flex;
-    flex-direction: column;
+    border: 2px solid #ccc;
 }
 
 /* CSS for blog title */
@@ -122,6 +119,7 @@ main {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 /* CSS for blog content */
@@ -129,16 +127,15 @@ main {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
-    max-width: calc(100% - 40px);
-    overflow-wrap: break-word;
+    padding: 16px;
+    word-wrap: break-word;
 }
 
 /* CSS for blog author */
 .blog-author {
     font-style: italic;
-    font-size: 14px;
-    width: calc(100% - 40px);
-    margin-top: auto;
+    font-size: 16px;
+    color: #97a6fd;
 }
 
 footer {
