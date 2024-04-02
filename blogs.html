@@ -10,7 +10,10 @@
     <header>
         <h1>Dog With A Blog</h1>
         <nav class="navbar">
-            <button class="back-button" onclick="navigateBackToHome()">Back</button>
+            <button class="back-button" onclick="navigateBackToHome()">
+                <ion-icon name="arrow-back-outline"> </ion-icon>
+                <span>Back</span>
+            </button>
             <button class="dark-theme-toggle" onclick="toggleDarkTheme()">
                 <ion-icon name="moon"></ion-icon>
                 <span class="dark-theme-text">Dark Theme</span>
@@ -18,7 +21,9 @@
         </nav>
     </header>
     <main>
+        <div id="blogContainer">
 
+        </div>
     </main>
     <footer>
         Footer
