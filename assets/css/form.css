@@ -245,23 +245,19 @@ footer {
         margin-bottom: 10px;
     }
 
-    main {
-        padding: 10px;
-    }
-
     .post-blog {
-        width: calc(100% - 32px); /* Adjust margin */
+        width: 100%;
         max-width: none;
         margin: 8px;
     }
 
     textarea {
-        width: calc(100% - 20px); /* Adjust margin */
+        width: 100%;
         max-width: none;
     }
 
     input[type="text"] {
-        width: calc(100% - 20px); /* Adjust margin */
+        width: 100%;
         max-width: none;
     }
 
